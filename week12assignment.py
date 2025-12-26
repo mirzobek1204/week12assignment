@@ -5,7 +5,6 @@ Emma,History,80,90
 David,Science,95,90
 BadLine,Data,Missing
 Chris,History,20,30"""
-
 with open("exam_scores.txt", "w") as f:
     f.write(data)
 def process_exam_scores(filename):
@@ -38,9 +37,10 @@ def save_grade_report(subject_totals,failing_students):
         file.write("----------------------------\n")
         for name,score in failing_students:
             file.write(f"{name} ({score} pts)\n")
-
+            
 subject_totals,failing_students=process_exam_scores("exam_scores.txt")
 save_grade_report(subject_totals,failing_students)
+
 
 
 
