@@ -41,9 +41,8 @@ def save_grade_report(subject_totals,failing_students):
 
 subject_totals,failing_students=process_exam_scores("exam_scores.txt")
 save_grade_report(subject_totals,failing_students)
-with open("grade_report.txt", "r") as file:
-    report=file.read()
-    print(report)
+
+
 
 
 
